@@ -113,6 +113,8 @@ public class makeKeyword {
 			e.printStackTrace();
 		} catch (TransformerException e) {
 			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 		System.out.println("XML 파일로 성공적으로 저장하였습니다. (" + xmlFilePath + ")");
 	}
