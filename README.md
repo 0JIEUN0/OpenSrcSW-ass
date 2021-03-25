@@ -19,10 +19,10 @@ Open Source SW <br>
  - index.xml 파일은 ./data/index.xml 에 저장함 <br>
 ![re](https://user-images.githubusercontent.com/63097207/111558244-c18ba080-87d1-11eb-914e-bf013b6eb976.PNG)
 
-<br>
 ## 3. 원격 저장소 - indexer.java
 - 저장되어 있는 index.xml 파일로부터 index.post 파일 만들기<br>
 - index.post 는 inverted file 로, 단어 빈도수를 기준으로 가중치를 계산하여 만들기<br>
 - $ java kuir -i ./data/index.xml <br>
 - index.post 파일은 ./data/index.post 로 저장함 <br>
 - ![image](https://user-images.githubusercontent.com/63097207/112443531-69840980-8d90-11eb-8d6e-565a33e268a8.png)
+- HashMap 형태로 저장하는데, Key = 단어, value = 가중치 계산한 값. (단, 단어가 문서에 등장하지 않는 경우는 포함하지 않음)<br>
