@@ -26,3 +26,13 @@ Open Source SW <br>
 - index.post 파일은 ./data/index.post 로 저장함 <br>
 - ![image](https://user-images.githubusercontent.com/63097207/112443531-69840980-8d90-11eb-8d6e-565a33e268a8.png)
 - HashMap 형태로 저장하는데, Key = 단어, value = 가중치 계산한 값. (단, 단어가 문서에 등장하지 않는 경우는 포함하지 않음)<br>
+
+## 4. Branch - searcher.java
+ - 저장되어 있는 index.post 와 collection.xml 를 이용해서 입력 query 와 문서의 유사도 계산 (Calcsim) <br>
+ - searcher.java<br>
+ - command line 으로 실행<br>
+ - $ java -cp ./lib/kkma-2.1.jar; kuir -s ./data/index.post -q QUERY <br>
+ - 유사도 상위 3개 문서 title 출력 <br>
+ - 예시: $ java -cp ./lib/kkma-2.1.jar; kuir -s ./data/index.post -q "라면에는 면, 분말, 스프가 있다."<br>
+ - 결과:<br> 
+ ![image](https://user-images.githubusercontent.com/63097207/113234690-b90c8d00-92dc-11eb-9723-33a6d8b74866.png)
