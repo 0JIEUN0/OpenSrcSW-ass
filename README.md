@@ -37,7 +37,7 @@ Open Source SW <br>
  - 결과:<br> 
  ![image](https://user-images.githubusercontent.com/63097207/113234690-b90c8d00-92dc-11eb-9723-33a6d8b74866.png)
  
- ## 4. 병합 - searcher.java
+ ## 5. 병합 - searcher.java
  - master 브랜치에 searcher.java 만들고 CalcSim 함수 수정 후 feature 브랜치와 Merge (conflict) <br>
  - feature 브랜치의 searcher.CalsSim() 을 InnerProduct() 로 변경하고 conflict 해결 <br>
  - sercher.java<br>
@@ -45,6 +45,7 @@ Open Source SW <br>
  - command line 으로 실행<br>
  - $ java -cp ./lib/kkma-2.1.jar; kuir -s ./data/index.post -q QUERY <br>
  - 유사도 상위 3개 문서 title 출력 <br>
+ - (단, 유사도 0 인 문서는 출력하지 않는다. 또한, 모든 문서에서 유사도가 0 이면 "검색 결과가 없습니다." 출력) <br>
  - 예시: $ java -cp ./lib/kkma-2.1.jar; kuir -s ./data/index.post -q "라면에는 면, 분말, 스프가 있다."<br>
  - 결과:<br> 
  ![image](https://user-images.githubusercontent.com/63097207/113955629-13ff3080-9857-11eb-8880-3fa99dbd891b.png)
