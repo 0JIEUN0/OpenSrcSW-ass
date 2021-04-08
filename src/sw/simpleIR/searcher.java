@@ -1,9 +1,5 @@
 package sw.simpleIR;
 
-<<<<<<< HEAD
-public class searcher {
-
-=======
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,6 +27,12 @@ public class searcher {
 	public void showHighSimilarityDoc(String filePath, String query) {
 		Float[] result = CalcSim(query, filePath);
 		
+		/*
+		for(float f: result)
+			System.out.print(f+ " ");
+		System.out.println();
+		*/	
+				
 		int[] docId = new int[result.length];
 		for(int i=0; i<result.length; i++) docId[i] = i;
 		
@@ -63,14 +65,50 @@ public class searcher {
 		
 		String[] titles = getTitleFromXML(filePath);
 		System.out.println("===== 유사도 검색 결과 =====");
-		for(int i=0; i<RANK_NUM; i++) {
-			System.out.println((i+1) + ". " + titles[docId[i]] + " (" +result[i] + ")");
-		}
-		
-		
+		if(result[0] == 0) System.out.println("검색 결과가 없습니다.");
+		else {
+			for(int i=0; i<RANK_NUM; i++) {
+				if(result[i] == 0) break;
+				System.out.println((i+1) + ". " + titles[docId[i]] + " (" +result[i] + ")");
+			}
+		}		
 	}
 	
 	public Float[] CalcSim(String query, String filePath) {
+		Float[] innerProduct = InnerProduct(query, filePath);
+		Float[] result = new Float[indexer.NUM];
+		String[] queryKeywords = this.extractKeywordUsingkkma(query);
+		
+		float queryKeywordWeight = 1.0f; // 모든 qeury 의 keyword 의 weight 는 1 로 고정
+		Float querySize = (float) Math.sqrt(Math.pow(queryKeywordWeight, 2) * queryKeywords.length); // querySize = 2
+		
+		/*
+		for(String keyword: queryKeywords) {
+			System.out.print(keyword + " -> ");
+			for(float f: this.keywordWeights.get(keyword))
+				System.out.print(f + " ");
+			System.out.println();
+		}*/
+		
+		for(int i=0; i<result.length; i++) {	
+			// calculate doc i vector size
+			Float docVectorSize = 0.0f;
+			for(String keyword: queryKeywords) {
+				Float docWeight = this.keywordWeights.get(keyword)[i];
+				docVectorSize = (float) (docVectorSize + Math.pow(docWeight, 2));
+			}
+			docVectorSize = (float) Math.sqrt(docVectorSize);
+			
+			// calculate Sim(Q, id i)
+			result[i] = innerProduct[i] / (querySize * docVectorSize);
+			
+			// 소수점 둘째자리까지 표시
+			result[i] = (float) (Math.round(result[i] *100)/100.0);
+		}
+		return result;
+	}
+	
+	public Float[] InnerProduct(String query, String filePath) {
 		this.getWeightFromPost(filePath);
 		String[] queryKeywords = this.extractKeywordUsingkkma(query);
 		
@@ -193,6 +231,4 @@ public class searcher {
 		}
 		
 	}
-	
->>>>>>> feature
 }
