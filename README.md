@@ -1,8 +1,12 @@
 # OpenSrcSW-ass
 
-Open Source SW <br>
-[Assignment]
+KU Open Source SW <br>
+[Assignment] <br>
+week 2 ~ week 8 : OpenSrcSW-ass/src/sw/simpleIR/ <br>
+week 9 ~ week 14 : OpenSrcSW-ass/<strong>python(week9~week14)</strong>/ <br>
+<hr>
 
+# Java Programming
 
 ## 1. Git 개념 잡기 - makeCollection.java
  - 폴더에 저장되어 있는 HTML 파일을 읽어온 후, 요구하는 양식에 따라 XML 파일로 저장하기.<br>
@@ -49,3 +53,14 @@ Open Source SW <br>
  - 예시: $ java -cp ./lib/kkma-2.1.jar; kuir -s ./data/index.post -q "라면에는 면, 분말, 스프가 있다."<br>
  - 결과:<br> 
  ![image](https://user-images.githubusercontent.com/63097207/113955629-13ff3080-9857-11eb-8880-3fa99dbd891b.png)
+
+<hr>
+
+# Python Programming
+
+## Week 9: 수치 게산
+- 1: x 값을 입력 받아 2차 방정식의 y 계산 <br>
+- 2: 반지름을 입력 받아 원의 둘레와 넓이 계산 <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/116489818-cf543b80-a8d0-11eb-9540-d0296f9a20dd.png)
+- ![image](https://user-images.githubusercontent.com/63097207/116489984-41c51b80-a8d1-11eb-8999-cebcb2498af0.png)
