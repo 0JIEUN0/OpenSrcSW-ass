@@ -3,8 +3,8 @@
 KU Open Source SW <br>
 [Assignment] <br>
 week 2 ~ week 8 : OpenSrcSW-ass/src/sw/simpleIR/ <br>
-week 9 : OpenSrcSW-ass/<strong>python(week9~week14)</strong>/   or   OpenSrcSW-ass/tree/python<br>
-week 10~14 : OpenSrcSW-ass/tree/python <br>
+week 9 : OpenSrcSW-ass/<strong>python(week9-week14)</strong>/   or   OpenSrcSW-ass/tree/python<br>
+week 10 - 14 : OpenSrcSW-ass/tree/python <br>
 <hr>
 
 # Java Programming
