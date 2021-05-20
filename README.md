@@ -38,3 +38,15 @@ week 10~14 : OpenSrcSW-ass/tree/python <br>
 - ![image](https://user-images.githubusercontent.com/63097207/118067310-41517800-b3db-11eb-8ec9-d64dfc6b883d.png)
 - ![image](https://user-images.githubusercontent.com/63097207/118067386-69d97200-b3db-11eb-8943-4149ed5e7fae.png)
 - ![image](https://user-images.githubusercontent.com/63097207/118067503-a7d69600-b3db-11eb-900d-2d9150c1e7c1.png)
+
+## Week 12: 공공 데이터 분석 [ 실습 2개 ]
+- 1: 서울의 일교차
+- 기온 공공 데이터를 이용하여 서울에서 일교차가 가장 큰 날, 최저기온이 가장 작은 날, 최고 기온이 가장 높은 날을 찾아서 출력 <br>
+- (사용 데이터: 2020년 12월) <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/119022835-02738180-b9dc-11eb-8b69-b0d81888df8c.png)
+- 2: 지하철 이용객 <br>
+- '지하철 노선별 역별 이용현황' 데이터를 이용하여 노선별로 가장 이용객이 많은 3개역과 가장 적은 3개 역을 출력 <br>
+- (사용 데이터: 2020-01-01 ~ 2020-12-31) <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/119022804-f982b000-b9db-11eb-9ae0-c88f54a781e8.png)
