@@ -50,3 +50,12 @@ week 10~14 : OpenSrcSW-ass/tree/python <br>
 - (사용 데이터: 2020-01-01 ~ 2020-12-31) <br>
 - 결과: <br>
 - ![image](https://user-images.githubusercontent.com/63097207/119022804-f982b000-b9db-11eb-9ae0-c88f54a781e8.png)
+
+## Week 13: 데이터 시각화 [ 실습 2개 ]
+- (사용 데이터: 2010-01-01 ~ 2020-01-01 (10년)) <br>
+- 1: 생일의 서울 지역 최고 기온과 최저 기온 시각화 <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/119748319-a1faad80-becf-11eb-8726-0bb0adb331e9.png)
+- 2: 서울 지역의 1월과 8월의 최고 기온 데이터를 히스토그램으로 시각화 <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/119748332-aaeb7f00-becf-11eb-8237-1224c6caf1d4.png)
