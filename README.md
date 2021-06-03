@@ -59,3 +59,11 @@ week 10~14 : OpenSrcSW-ass/tree/python <br>
 - 2: 서울 지역의 1월과 8월의 최고 기온 데이터를 히스토그램으로 시각화 <br>
 - 결과: <br>
 - ![image](https://user-images.githubusercontent.com/63097207/119748332-aaeb7f00-becf-11eb-8237-1224c6caf1d4.png)
+
+
+## Week 14: 데이터 분석 라이브러리 (numpy/pandas) [ 실습 1개 ]
+- 1: '광진구'와 가장 비슷한 인구 구조를 가진 '구'와 가장 다른 인구 구조를 가진 '구' 를 찾아 그래프로 시각화하기 <br>
+- 사용 데이터: 연령별 인구현황 (행정안전부): 2020-12 ~ 2020-12 <br>
+- 사용 라이브러리: numpy <br>
+- 결과: <br>
+- ![image](https://user-images.githubusercontent.com/63097207/120591398-0b9e2d00-c477-11eb-8d27-a36ec8fd2609.png)
