@@ -63,7 +63,16 @@ week 10~14 : OpenSrcSW-ass/tree/python <br>
 
 ## Week 14: 데이터 분석 라이브러리 (numpy/pandas) [ 실습 1개 ]
 - 1: '광진구'와 가장 비슷한 인구 구조를 가진 '구'와 가장 다른 인구 구조를 가진 '구' 를 찾아 그래프로 시각화하기 <br>
+- 그래프 출력 시, 동네명 옆에 표준편차 표시 <br>
 - 사용 데이터: 연령별 인구현황 (행정안전부): 2020-12 ~ 2020-12 <br>
 - 사용 라이브러리: numpy <br>
 - 결과: <br>
 - ![image](https://user-images.githubusercontent.com/63097207/120591398-0b9e2d00-c477-11eb-8d27-a36ec8fd2609.png)
+
+
+## Week 15: Naver Movie OpenAPI [ 실습 1개 ]
+- 1: Naver 영화 검색 API 를 사용해서 영화 검색 프로그램 작성 <br>
+- 사용 라이브러리: json-simple-1.1.1 <br>
+- 결과 <br>
+- ![image](https://user-images.githubusercontent.com/63097207/121447892-992ad100-c9d1-11eb-92ab-f678bcf3ff6e.png)
+
